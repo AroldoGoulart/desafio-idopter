@@ -116,7 +116,7 @@ function LoginScreen() {
                         autoCompleteType="email"
                         placeholder="Digite seu email"
                         value={email}
-                        style={[styles.defaultTouchEmail, emailError ? styles.emailError : styles.defaultTouchEmail]}
+                        style={[styles.defaultTouchEmail, emailError ? styles.emailError : { color: colors.darkText }]}
                         textAlign='left'
                         onChangeText={handlerEmail}
                     />

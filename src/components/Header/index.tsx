@@ -1,5 +1,5 @@
-import React from "react"
-import { View, Text, Alert } from "react-native"
+import React, { useEffect } from "react"
+import { View, Text, Alert, BackHandler } from "react-native"
 import { useColors } from "../../utils/useColors";
 import Icon from "react-native-vector-icons/FontAwesome5"
 import { CommonActions, useNavigation } from "@react-navigation/core";
@@ -17,9 +17,8 @@ function Header(props: HeaderProps) {
     const styles = useStylesHeader()
     const colors = useColors()
 
-    const handlerPress = () => {
-
-        const exit = () => {
+    const exit = () => {
+        const exitScreen = () => {
             deleteUser()
             navigation.dispatch(
                 CommonActions.reset({
@@ -30,12 +29,27 @@ function Header(props: HeaderProps) {
                 })
             );
         }
-
-        Alert.alert("Opss", "Você quer sair da conta ?",
+        Alert.alert("Opa, campeão", "Você quer sair da conta ?",
             [
-                { text: 'Sim', onPress: exit },
-                { text: "Cancelar" }
+                { text: "Fechar app", onPress: () => BackHandler.exitApp() },
+                { text: 'Sim', onPress: exitScreen },
+                { text: "Não", onPress: () => null },
+
             ])
+        return true
+    }
+
+    useEffect(() => {
+        const backHandler = BackHandler.addEventListener(
+            "hardwareBackPress",
+            () => exit()
+        );
+
+        return () => backHandler.remove();
+    }, [])
+
+    const handlerPress = () => {
+        exit()
     }
 
     return (
