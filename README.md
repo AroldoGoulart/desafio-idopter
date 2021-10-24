@@ -21,13 +21,12 @@ yarn
 npx react-native run-android
 ```
 
-
-Imagens:
-## Tela login
+# Imagens
+#### Tela login
 
 <img src="https://github.com/SnowLew/desafio-idopter/blob/main/github/loginScreen.png?raw=true=250x250" alt=""  width="250" height="500" />
 
-## Tela de "campeões"
+#### Tela de "campeões"
 <img src="https://github.com/SnowLew/desafio-idopter/blob/main/github/listScreen.png?raw=true=250x250" alt="" width="250" height="500" />
 
 
