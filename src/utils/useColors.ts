@@ -16,6 +16,8 @@ const colors = {
         "main": "#fff",
         "secondary": "#f2f2f2"
     },
+    darkText: '#292929',
+    textInput: 'rgba(230,230,230, 0.35)'
 }
 
 function useColors() {
