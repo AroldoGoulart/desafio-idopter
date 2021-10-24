@@ -25,9 +25,9 @@ npx react-native run-android
 Imagens:
 ## Tela login
 
-<img src="https://github.com/SnowLew/desafio-idopter/blob/main/github/loginScreen.png?raw=true=250x250" alt=""  width="250" height="400" />
+<img src="https://github.com/SnowLew/desafio-idopter/blob/main/github/loginScreen.png?raw=true=250x250" alt=""  width="250" height="500" />
 
 ## Tela de "campeões"
-<img src="https://github.com/SnowLew/desafio-idopter/blob/main/github/listScreen.png?raw=true=250x250" alt="" width="250" height="400" />
+<img src="https://github.com/SnowLew/desafio-idopter/blob/main/github/listScreen.png?raw=true=250x250" alt="" width="250" height="500" />
 
 
