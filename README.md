@@ -1,7 +1,9 @@
 ![](https://github.com/idopterlabs/idopter-site/blob/master/img/idopterlabsteste2.png?raw=true)
 
 ## Desafio de código 
-Esse repositorio é dedicado ao desafio tecnico para ingresso part-time na IdopterLabs.com
+Esse repositorio é dedicado ao desafio tecnico para ingresso part-time na IdopterLabs.com. 
+
+O desafio consiste em um sistema de login utilizando Bearert token + listagem de campões da FIFA. 🏆
 
 ## Como rodar
 
@@ -21,4 +23,11 @@ npx react-native run-android
 
 
 Imagens:
+## Tela login
+
+<img src="https://github.com/SnowLew/desafio-idopter/blob/main/github/loginScreen.png?raw=true=250x250" alt=""  width="250" height="400" />
+
+## Tela de "campeões"
+<img src="https://github.com/SnowLew/desafio-idopter/blob/main/github/listScreen.png?raw=true=250x250" alt="" width="250" height="400" />
+
 
