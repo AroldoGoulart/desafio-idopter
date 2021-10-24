@@ -1,17 +1,6 @@
-// axios preconfig
-import axios from 'axios';
 import { LoginRes, WinnersType } from '../types/general';
 
 const BASE_URL = 'https://frozen-peak-68797.herokuapp.com/';
-
-const instance = axios.create({
-    baseURL: BASE_URL,
-    timeout: 5000,
-    headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-    },  
-})
 
 const fetchMiddle = async (method: "GET" | "POST",route:string, jsonData: any, token = '') => {
     const url = BASE_URL + route;

@@ -9,10 +9,17 @@ const AuthContext = createContext<AuthContextData>({} as AuthContextData);
 export const AuthProvider: React.FC = ({ children }) => {
     const [user, setUser] = useState<UserType>(userInitialState);
     const [winners, setWinners] = useState<WinnersType[] | []>([]);
+    const [loading, setLoading] = useState<boolean>(true);
 
     useEffect(() => {
         loadStorageData();
     }, []);
+
+    useEffect(() => {
+        if (!!user) {
+            setLoading(false)
+        }
+    }, [user])
 
     async function loadStorageData() {
         const storagedUser = await AsyncStorage.getItem('@RNAuth:user');
@@ -45,7 +52,7 @@ export const AuthProvider: React.FC = ({ children }) => {
     }
 
     return (
-        <AuthContext.Provider value={{ user, saveUser, deleteUser, winners, saveWinners }}>
+        <AuthContext.Provider value={{ user, loading, saveUser, deleteUser, winners, saveWinners }}>
             {children}
         </AuthContext.Provider>
     );

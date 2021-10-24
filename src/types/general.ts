@@ -16,7 +16,8 @@ export type AuthContextData = {
     winners: WinnersType[],
     deleteUser: () => void,
     saveUser: (obj: UserType) => void
-    saveWinners: (obj: WinnersType[]) => void
+    saveWinners: (obj: WinnersType[]) => void,
+    loading: boolean
 }
 
 export type RootStackParamList = {
