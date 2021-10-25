@@ -3,7 +3,7 @@
 ## Desafio de código 
 Esse repositorio é dedicado ao desafio tecnico para ingresso part-time na IdopterLabs.com. 
 
-O desafio consiste em um sistema de login utilizando Bearert token + listagem de campões da FIFA. 🏆
+O desafio consiste em um sistema de login utilizando Bearer token + listagem de campões da FIFA. 🏆
 
 ## Como rodar
 
